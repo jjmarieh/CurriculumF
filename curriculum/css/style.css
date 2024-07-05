@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative; 
+}
+.header img {
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 20px;
+}
+.header-title {
+    flex-grow: 1; 
+    text-align: center; 
+    transform: translateX(-20px); 
+}
+.header div h1 {
+    margin: 0;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+}
+.contact p {
+    margin: 5px 0;
+    padding: 10px;
+}
+.highlight {
+    background-color: #001f3f; 
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.highlight a {
+    color: white;
+    text-decoration: none;
+}
+.highlight a:hover {
+    text-decoration: underline;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+}
+.left-column {
+    flex-basis: 65%;
+    padding-right: 10px; 
+}
+.right-column {
+    background-color: #dbefff; 
+    flex-basis: 30%; 
+    margin-left: auto; 
+    padding: 10px;
+}
+.section h2 {
+    margin-bottom: 10px;
+    color: #001f3f;
+}
+.skills ul, .experience ul {
+    list-style: none;
+    padding: 0;
+}
+.skills ul li, .experience ul li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 25px; 
+}
+.skills ul li::before, .experience ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #001f3f; 
+    border-radius: 50%;
+}
